@@ -52,11 +52,11 @@ body {
     cursor: pointer;
     transition: all 0.4s ease;
 }
-.box:hover, .restart:hover{
+.box:hover, #restart:hover{
     transform: scale(0.9);
     background: #2c1901;
 }
-.restart {
+#restart {
     background: #8b4513;
     color: #fff;
     padding: 0.5rem;

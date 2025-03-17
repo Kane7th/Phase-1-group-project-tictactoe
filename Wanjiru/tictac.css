@@ -1,0 +1,65 @@
+/* general styling */
+body {
+    height: 100vh;
+    margin: 0;
+    margin: 0;
+    background: url(/Wanjiru/assets/woodbackground.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    display: grid;
+    place-items: center;
+}
+
+.game-container {
+    border-radius: 1.2rem;
+    border: 2px solid #4a2f1a;
+    box-shadow: 0 0 1.8rem rgba(87, 81, 5, 1.9);
+    padding: 1.4rem;
+    text-align: center;
+}
+#scoring-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 2px solid #301704;
+    border-radius: 1.2rem;
+    background: #1a0f00;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+.score {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.score span {
+    margin-left: 0.9rem;
+    font-size: 1.8rem;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 6.25rem);
+    grid-template-rows: repeat(3, 6.25rem);
+    grid-gap: 0.7rem; 
+}
+.box {
+    display: grid;
+    width: 6.25rem;
+    height: 6.25rem;
+    border: 3px solid #8b4513;
+    border-radius: 1.1rem;
+    box-shadow: 0 0 1rem rgb(51, 48, 1);
+    font-size: 3.5rem;
+    place-items: center;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.box:hover, .restart:hover{
+    transform: scale(0.9);
+    background: #2c1901;
+}
+.restart {
+    background: #8b4513;
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
